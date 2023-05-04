@@ -33,7 +33,7 @@ while True:
     print ("\n")
 
     time.sleep(4.9)
-    continue;
+    # continue;
 
     df = bids.append(asks)
     
@@ -44,7 +44,7 @@ while True:
     df['timestamp'] = req_timestamp
     
     
-    df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+    df.to_csv("./bithumb-orderbook.csv", index=False, header=False, mode = 'a')
 
  
 
