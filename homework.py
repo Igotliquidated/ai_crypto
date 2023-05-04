@@ -32,7 +32,7 @@ while True:
 
     print ("\n")
 
-    time.sleep(4.9)
+    time.sleep(1)
     # continue;
 
     df = pd.concat([bids, asks])
