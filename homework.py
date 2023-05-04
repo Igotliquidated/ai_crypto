@@ -35,7 +35,7 @@ while True:
     time.sleep(4.9)
     # continue;
 
-    df = bids.append(asks)
+    df = pd.concat([bids, asks])
     
     timestamp = datetime.datetime.now()
     req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
