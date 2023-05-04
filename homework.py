@@ -26,14 +26,13 @@ while True:
 
     df = pd.concat([bids, asks])
     timestamp=int(time.time())
-    dt_object = datetime.datetime.fromtimestamp(timestamp)
-    print(dt_object)
+    'dt_object = datetime.datetime.fromtimestamp(timestamp)'
+    'print(dt_object)'
     print (df)
 
     print ("\n")
 
     time.sleep(1)
-    # continue;
 
     df = pd.concat([bids, asks])
     
