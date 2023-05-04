@@ -24,7 +24,7 @@ while True:
     asks.sort_values('price', ascending=True, inplace=True)
     asks['type'] = 1 
 
-    df = bids.append(asks)
+    df = pd.concat([bids, asks])
     timestamp=int(time.time())
     dt_object = datetime.datetime.fromtimestamp(timestamp)
     print(dt_object)
