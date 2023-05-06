@@ -41,7 +41,7 @@ while True:
     df['timestamp'] = req_timestamp
     
     current_time = datetime.datetime.now()
-    last_time = current_time.replace(hour=23, minute=40, second=0, microsecond=0)
+    last_time = current_time.replace(hour=0, minute=0, second=0, microsecond=0)
     if current_time >= last_time:
         df.to_csv("./bithumb-orderbook2.csv", index=False, header=False, mode = 'a')
     else:
