@@ -43,9 +43,9 @@ while True:
     current_time = datetime.datetime.now()
     last_time = current_time.replace(hour=0, minute=0, second=0, microsecond=0)
     if current_time >= last_time:
-        df.to_csv("./bithumb-orderbook1.csv", index=False, header=False, mode = 'a')
+        df.to_csv("./2023-05-07-bithumb-orderbook.csv", index=False, header=False, mode = 'w')
     else:
-        df.to_csv("./bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+        df.to_csv("./2023-05-08-bithumb-orderbook.csv", index=False, header=False, mode = 'w')
 
 
 
