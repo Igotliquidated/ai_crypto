@@ -42,11 +42,8 @@ while True:
     
     current_time = datetime.datetime.now()
     filename = f"./{current_time.strftime('%Y-%m-%d')}-bithumb-orderbook.csv"
-    
+
     df.to_csv(filename, index=False, header=False, mode='a')
-
-
-
 
 
 
