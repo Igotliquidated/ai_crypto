@@ -41,15 +41,10 @@ while True:
     df['timestamp'] = req_timestamp
     
     current_time = datetime.datetime.now()
-    last_time = current_time.replace(hour=0, minute=0, second=0, microsecond=0)
-    if current_time >= last_time:
-        df.to_csv("./2023-05-07-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
-    else:
-        df.to_csv("./2023-05-08-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+    filename = f"./{current_time.strftime('%Y-%m-%d')}-bithumb-orderbook.csv"
+    
+    df.to_csv(filename, index=False, header=False, mode='a')
 
-
-
- 
 
 
 
